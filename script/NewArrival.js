@@ -1,6 +1,6 @@
 
 let bag = []
-fetch('https://63c6ab94d307b769673e3b21.mockapi.io/rings')
+fetch('http://localhost:8080/newaarrival')
     .then((fromResolve) => {
         return fromResolve.json()
     })
@@ -9,7 +9,7 @@ fetch('https://63c6ab94d307b769673e3b21.mockapi.io/rings')
         console.log(bag)
         displayCard(bag)
     })
-    // http://localhost:8080/newaarrival
+    // 
 function displayCard(data) {
     let each = document.querySelector("#products-container")
     each.innerHTML = null;
